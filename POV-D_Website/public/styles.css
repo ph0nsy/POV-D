@@ -1,0 +1,64 @@
+@font-face{
+    font-family: 'Abel';
+    src: url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+}
+
+h1 {
+    font-variant: small-caps;
+    padding-bottom: 20px;
+    font-size: 50px !important;
+}
+.main-content{
+    margin: auto; 
+    background-color: rgba(170, 166, 166, 0.568);
+    padding-top: 10px;
+}
+.navbar a {
+    font-family: 'Abel', sans-serif !important;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 25px !important;
+}
+.section{
+    padding-top: 100px;
+    margin: auto; 
+    text-align: center;
+}
+@media screen and (min-width: 280px) and (max-width: 519px) {
+    h1{
+        font-size: 30px !important;
+    }
+    .main-content{
+        width: 280px; 
+    }
+    .section{
+        width: 280px;
+    }
+} 
+@media screen and (min-width: 520px) and (max-width: 767px) {
+    h1{
+        font-size: 30px !important;
+    }
+    .main-content{
+        width: 500px; 
+    }
+    .section{
+        width: 360px;
+    }
+} 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main-content{
+        width: 700px; 
+    }
+    .section{
+        width: 600px;
+    }
+} 
+@media screen and (min-width: 991px) {
+    .main-content{
+        width: 900px; 
+    }
+    .section{
+        width: 800px;
+    }
+} 
