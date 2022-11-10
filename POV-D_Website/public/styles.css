@@ -8,6 +8,26 @@ h1 {
     padding-bottom: 20px;
     font-size: 50px !important;
 }
+
+.button-gototop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.button-gototop:hover {
+  background-color: #555;
+}
+
 .main-content{
     margin: auto; 
     background-color: rgba(170, 166, 166, 0.568);
@@ -61,4 +81,63 @@ h1 {
     .section{
         width: 800px;
     }
+
+    
+#cookiesms1:target {
+    display: none;
+}
+.cookiesms{ 
+  width:100%;
+  height:43px;
+  margin:0 auto;
+  padding-left:1%;
+  padding-top:5px;
+  font-size: 1.2em;
+  clear:both;
+  font-weight: strong;
+  color: black;
+  bottom:0px;
+  position:fixed;
+  left: 0px;
+  background-color: #FFF;
+  opacity:0.7;
+  filter:alpha(opacity=70);
+  transition: bottom 1s;
+  -webkit-transition:bottom 1s;
+  -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+  -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
+  box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
+  z-index:999999999;
+}
+
+a.cokiesms{
+  color: black;
+}
+ 
+.cookiesms:hover{
+  bottom:0px;
+}
+.cookies2{
+  background-color: #FFF;
+  display:inline;
+  opacity:0.95;
+  filter:alpha(opacity=95);
+  position:absolute; 
+  left:1%; 
+  top:-30px;
+  font-size:15px;
+  height:30px;
+  padding-left:25px;
+  padding-right:25px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-topleft: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+  -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
+  box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
+}
+
 } 

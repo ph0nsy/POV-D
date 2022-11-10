@@ -157,12 +157,41 @@
                </div>
             </div>
          </div>
+
+
+         
+
+            
+
       </div>
       <!--Footer-->
       <footer>
          Esto es un footer
       </footer>
+      <button onclick="topFunction()" id="myBtn" class="button-gototop"><i class="fas fa-angle-double-up"></i></button>
+            <div class="cookiesms" id="cookie1">
+               Esta web puede recopilar información para mejorar su experiencia online</a> 
+               Pulse 'Aceptar' si acepta estos terminos y condiciones. --> <button onclick="controlcookies()">Aceptar</button>
+             <div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">IMPORTANTE</div>
+            </div>
    </body>
    <!--JavaScript Propio-->
    <script src="./app.js"></script>
+
+
+   <!--JavaScript Cookies-->
+   <script type="text/javascript">
+      if (localStorage.controlcookie>0){ 
+         document.getElementById('cookie1').style.bottom = '-50px';
+      }
+   </script>
+          
+   <script type="text/javascript">
+      function controlcookies() { 
+         localStorage.controlcookie = (localStorage.controlcookie || 0);
+         localStorage.controlcookie++; 
+         cookie1.style.display='none'; 
+      }
+   </script>
+
 </html>
