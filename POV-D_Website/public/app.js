@@ -1,8 +1,7 @@
 /**
  * This is the JavaScript code that we'll be running on our website
  * 
- * * { Scanner, List }
- * todo {}
+ * * { Scanner, List, Recomended }
  */
 /**
  * normal
@@ -14,8 +13,35 @@
  */
 
 // Lista de elementos escaneados
- var arr = [];
+var arr = [];
+ 
+function loadJSON(path, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          success(JSON.parse(xhr.responseText));
+        }
+        else {
+          error(xhr);
+        }
+      }
+    };
+    xhr.open('GET', path, true);
+    xhr.send();
+  }
 
+function addToList(Data){
+    console.log(Data);
+    var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">IG: ' + Data.product.ingredients[0].processing + ' ' + Data.product.ingredients[0].text + '</td></tr></tbody></table></li>';
+    $("#List").append(newElement);
+    document.getElementById("kcal").value += 5;
+    document.getElementById("sugars").value += 5;
+    document.getElementById("carbs").value += 5;
+    document.getElementById("fat").value += 5;
+    document.getElementById("saturated").value += 5;
+    document.getElementById("salts").value += 5;
+}
 /**  
  * * Scanner *
  * 
@@ -53,8 +79,7 @@ docReady(function () {
             console.log(`Scan result ${decodedText}`, decodedResult);              
             arr.push(lastResult);
             console.log(`Scanned codes: ${arr}`);
-            resultContainer.innerHTML += `<div>[${countResults}] - ${qrCodeMessage}</div>`;
-            // Handle on success condition with the decoded message.
+            loadJSON('https://world.openfoodfacts.org/api/v0/product/'+ decodedText + '.json', addToList,'jsonp');
         }
     }
     
@@ -63,3 +88,4 @@ docReady(function () {
         "qr-reader", { fps: 10, qrbox: { width: 300, height: 150 } }); // Size of the scan window 
     html5QrcodeScanner.render(onScanSuccess);
 });
+

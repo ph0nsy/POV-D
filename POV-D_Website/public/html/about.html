@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <!--Metadata-->
+      <meta charset="UTF-8">
+      <meta name="description" content="Ayudante de Compra para Diabetes">
+      <meta name="keywords" content="compra, diabetes, diabético, tipo 2, tipo 1, ayudante, lista, lista de la compra, recomendaciones">
+      <meta name="author" content="POV:D">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Datos de la Pestalla-->
+      <title>POV: Diabetes Tracker</title>
+      <link rel="icon" type="image/x-icon" href="../assets/pov_d_icon.ico">
+      <!--Estilos Propios-->
+      <link rel="stylesheet" href="../styles.css">
+      <!--Librería de Lectura de Códigos de Barras-->
+      <script src="https://unpkg.com/html5-qrcode"></script>
+      <!--Bootstrsp 5-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+      <!--Fuentes de Texto-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+   </head>
+   <body>
+    <!--Responsive Scroll Navbar que salta a las diferentes secciones y colapsa a partir de ciertas dimensiones-->
+      <nav class="navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html#intro" style="padding-left: 30px;"><img src="../assets/pov_d_logo.png" alt="" width="80" height="80"></a>
+            <!--Botón que aparece al colapsar la Navbar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos de la Navbar-->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                  <li class="nav-item" style="padding-right: 20px; font-family: 'Abel', sans-serif;"></li>
+                  >
+                  <a class="nav-link" href="../index.html#scanner">Escáner</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 20px;"></li>
+                  >
+                  <a class="nav-link" href="../index.html#tracker">Alimentos</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 20px;"></li>
+                  >
+                  <a class="nav-link" href="../index.html#recomended">Recomendaciones</a>
+                  </li>
+                  <li class="nav-item" style="padding-right: 20px;"></li>
+                  >
+                  <a class="nav-link" href="../index.html#info">Información</a>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                  <li class="nav-item" style="padding-right: 20px;">
+                      <a class="nav-link" href="#">Contacto</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!--Contenido de la Página-->
+      <div class="main-content">
+      <!--Sección de Presentación de los Miembros del Equipo-->
+      <div class="section" id="contact">
+         <h1>Conoce al Equipo</h1>
+         <p>Pellentesque habitant morbi <b><em>tristique senectus</em></b> et netus et malesuada fames ac turpis egestas.</p>
+         <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+         <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+         <br>
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Óscar<br>Martínez</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Alonso<br>Moreno</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Sara<br>Peirotén</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Javier<br>Torres</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Jesús<br>Terriza</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-md-6 mb-4">
+                  <div class="card border-0 shadow">
+                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
+                     <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Marcos<br>Zotes</h5>
+                        <div class="card-text text-black-50">Web Developer</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Footer-->
+      <footer>
+         Esto es un footer
+      </footer>
+   </body>
+   <!--JavaScript Propio-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>

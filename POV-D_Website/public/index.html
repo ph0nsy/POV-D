@@ -2,8 +2,11 @@
 <html lang="es">
    <head>
       <!--Metadata-->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset="UTF-8">
+      <meta name="description" content="Ayudante de Compra para Diabetes">
+      <meta name="keywords" content="compra, diabetes, diabético, tipo 2, tipo 1, ayudante, lista, lista de la compra, recomendaciones">
+      <meta name="author" content="POV:D">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--Datos de la Pestalla-->
       <title>POV: Diabetes Tracker</title>
       <link rel="icon" type="image/x-icon" href="./assets/pov_d_icon.ico">
@@ -46,11 +49,12 @@
                   <li class="nav-item" style="padding-right: 20px;"></li>
                   >
                   <a class="nav-link" href="#info">Información</a>
-                  </li>    
-                  <li class="nav-item" style="padding-right: 20px;"></li>
-                  >
-                  <a class="nav-link" href="#contact">Contacto</a>
-                  </li>    
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                  <li class="nav-item" style="padding-right: 20px;">
+                      <a class="nav-link" href="./html/about.html">Contacto</a>
+                  </li>
                </ul>
             </div>
          </div>
@@ -60,7 +64,7 @@
       <!--Introducción de la Página-->
       <div class="section" id="intro">
          <h1>¿Qué es <span style="color: #5b89c7;">pov:d</span>?</h1>
-         <p>Pellentesque habitant morbi <b><em>tristique senectus</em></b> et netus et malesuada fames ac turpis egestas.</p>
+         <p><b style="color: #5b89c7; font-variant: small-caps;">pov:d</b> es una herramienta que te permite hacer tu lista de la compra como <b><em>diabético</em></b>, aportandote información de los productos que vayas escaneando.</p>
          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
          <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
       </div>
@@ -73,19 +77,35 @@
       <!--Alimentos Escaneados-->
       <div class="section" id="tracker">
          <h1>Tu Lista de Alimentos</h1>
-         <p>You can use the <em>grid-area</em> property to specify where to place an item.</p>
-         <p>The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end.</p>
-         <p>Item1 will start on row 2 and column 1, and span 2 rows and 3 columns:</p>
+         <ul class="list" id="List">
+
+         </ul>
       </div>
       <!--Recomendaciones de la Dieta según los Alimentos-->
       <div class="section" id="recomended">
-         <h1>Recomendaciones</h1>
-         <h3>Carbohidratos</h3>
-         <progress id="" value="33" max="100"></progress>
+         <h1>Recomendaciones (Semanales)</h1>
+         <h3>Calorias</h3>
+         <progress id="kcal" value="0" max="14000"></progress>
          <br>
          <br>
          <h3>Azúcares</h3>
-         <progress id="" value="25" max="100"></progress>
+         <progress id="sugars" value="0" max="685"></progress>
+         <br>
+         <br>
+         <h3>Carbohidratos</h3>
+         <progress id="carbs" value="0" max="1769"></progress>
+         <br>
+         <br>
+         <h3>Grasas Totales</h3>
+         <progress id="fat" value="0" max="450"></progress>
+         <br>
+         <br>
+         <h3>Grasas Saturadas</h3>
+         <progress id="saturated" value="0" max="85"></progress>
+         <br>
+         <br>
+         <h3>Sales</h3>
+         <progress id="salts" value="10000" max="9045"></progress>
          <br>
          <br>
       </div>
@@ -96,73 +116,12 @@
          <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
          <p>Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
       </div>
-      <!--Sección de Presentación de los Miembros del Equipo-->
-      <div class="section" id="contact">
-         <h1>Conoce al Equipo</h1>
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Óscar<br>Martínez</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Alonso<br>Moreno</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Sara<br>Peirotén</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Javier<br>Torres</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Jesús<br>Terriza</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-2 col-md-4 mb-4">
-                  <div class="card border-0 shadow">
-                     <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="...">
-                     <div class="card-body text-center">
-                        <h5 class="card-title mb-0">Marcos<br>Zotes</h5>
-                        <div class="card-text text-black-50">Web Developer</div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
       <!--Footer-->
       <footer>
          Esto es un footer
       </footer>
    </body>
    <!--JavaScript Propio-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="./app.js"></script>
 </html>
