@@ -2,13 +2,13 @@
     "version": 2,
     "builds": [
         {
-            "src": "./POV-D_Website/index.js",
+            "src": "./index.js",
             "use": "@vercel/node"
         }
     ],
     "routes" : [
         {
-            "src": "/POV-D_Website/(.*)",
+            "src": "/(.*)",
             "dest": "/"
         }
     ]
