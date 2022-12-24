@@ -50,6 +50,7 @@ li + li {
 }
 .section{
     padding-top: 100px;
+    padding-bottom: 100px;
     margin: auto; 
     text-align: center;
 }

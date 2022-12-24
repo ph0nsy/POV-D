@@ -1,0 +1,1283 @@
+{
+  "alimentos": [
+    {
+      "nombre": "Cuajada",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Flan",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Helado de Crema",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Helado 'sin azúcares añadidos'",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Helado de hielo",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Kéfir",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Leche condensada",
+      "indiceGlucemico": 61
+    },
+    {
+      "nombre": "Leche desnatada",
+      "indiceGlucemico": 32
+    },
+    {
+      "nombre": "Leche en polvo",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Leche entera",
+      "indiceGlucemico": 27
+    },
+    {
+      "nombre": "Leche semidesnatada",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Leche sin lactosa",
+      "indiceGlucemico": 81.2
+    },
+    {
+      "nombre": "Nata líquida",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Natillas",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Queso fresco",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Queso tipo Petit suisse",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Quesos de pasta, semis o curados",
+      "indiceGlucemico": "N/A"
+    },
+    {
+      "nombre": "Yogur desnatado, de sabores o fruta",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Yogur entero, de sabores o fruta",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Yogur líquido",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Yogur natural entero o desnatado",
+      "indiceGlucemico": 35 
+    },
+    {
+      "nombre": "Yogur tipo Actimel",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Yogur tipo Actimel 0%",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Altramuz",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Arroz blanco, crudo",
+      "indiceGlucemico": 27
+    },
+    {
+      "nombre": "Arroz blanco, hervido",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Arroz hinchado para desayuno",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Arroz integral, crudo",
+      "indiceGlucemico": 80
+    },
+    {
+      "nombre": "Arroz integral, hervido",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Arroz salvaje, crudo",
+      "indiceGlucemico": 27
+    },
+    {
+      "nombre": "Arroz salvaje, hervido",
+      "indiceGlucemico": 34
+    },
+    {
+      "nombre": "Arroz, cocido",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Arroz, crudo",
+      "indiceGlucemico": 27
+    },
+    {
+      "nombre": "Avena en copos",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Avena, crudo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Avena, hervido",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Boniato",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Cebada, cocido",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Cebada, crudo",
+      "indiceGlucemico": 10
+    },
+    {
+      "nombre": "Centeno, cocido",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Centeno, crudo",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Cereales desayuno (trigo)",
+      "indiceGlucemico": 77
+    },
+    {
+      "nombre": "Cereales desayuno, ricos en fibra (>10%)",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Cereales tipo muesli",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Cuscús, cocido",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Cuscús, crudo",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Fideos de arroz, hervido",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Fideos de soja, hervido",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Galleta sin azúcar",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Galleta Digestiva",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Galleta María",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Galleta chocolate",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Garbanzo, crudo",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Garbanzo, en conserva",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Garbanzo, hervido",
+      "indiceGlucemico": 35
+    },
+    {
+      "Nombre": "Gofio",
+      "Indice glucemico": 70
+    },
+    {
+      "Nombre": "Guisantes congelados, frescos, de lata",
+      "Indice glucemico": 35
+    },
+    {
+      "Nombre": "Harina de avena",
+      "Indice glucemico": 45
+    },
+    {
+      "Nombre": "Harina de cebada o centeno",
+      "Indice glucemico": 45
+    },
+    {
+      "Nombre": "Harina de maíz",
+      "Indice glucemico": 70
+    },
+    {
+      "Nombre": "Harina de soja",
+      "Indice glucemico": 25
+    },
+    {
+      "Nombre": "Harina de trigo",
+      "Indice glucemico": 78
+    },
+    {
+      "Nombre": "Hojaldre crudo",
+      "Indice glucemico": 89
+    },
+    {
+      "Nombre": "Hojaldre horneado",
+      "Indice glucemico": 89
+    },
+    {
+      "Nombre": "Hummus",
+      "Indice glucemico": 6
+    },
+    {
+      "Nombre": "Judías blancas, crudo",
+      "Indice glucemico": 35
+    },
+    {
+      "Nombre": "Judías blancas, en conserva",
+      "Indice glucemico": 35
+    },
+    {
+      "Nombre": "Judías blancas, hervido",
+      "Indice glucemico": 35
+    },
+    {
+      "nombre": "Legumbre, en conserva",
+      "indice_glucemico": 35
+    },
+    {
+      "nombre": "Lentejas, crudo",
+      "indice_glucemico": 35
+    },
+    {
+      "nombre": "Lentejas, en conserva",
+      "indice_glucemico": 35
+    },
+    {
+      "nombre": "Lentejas, hervido",
+      "indice_glucemico": 35
+    },
+    {
+      "nombre": "Maíz en lata",
+      "indice_glucemico": 65
+    },
+    {
+      "nombre": "Maíz en lata sin azúcar añadido",
+      "indice_glucemico": 52
+    },
+    {
+      "nombre": "Maíz tostado (quicos)",
+      "indice_glucemico": 53
+    },
+    {
+      "nombre": "Mijo, cocido",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Mijo, crudo",
+      "indiceGlucemico": 53
+    },
+    {
+      "nombre": "Pan blanco (de trigo)",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pan de centeno",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Pan de hamburguesa o Frankfurt",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Pan de molde",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Pan de trigo de grano entero",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Pan en bastoncitos",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pan rallado",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pan tostado o biscote",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pasta al huevo, crudo",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Pasta alimenticia integral, crudo",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Pasta alimenticia integral, hervido",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Pasta alimenticia, crudo",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Pasta alimenticia, hervido",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Pasta fresca rellena",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Pasta sin gluten",
+      "indiceGlucemico": 73
+    },
+    {
+      "nombre": "Patata, al horno o asada",
+      "indiceGlucemico": 62
+    },
+    {
+      "nombre": "Patata, crudo",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Patata, hervida",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Patatas chips",
+      "indiceGlucemico": 95
+    },
+    {
+      "nombre": "Patatas fritas",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Puré de patatas, elaborado con leche",
+      "indiceGlucemico": 90
+    },
+    {
+      "nombre": "Puré de patatas, en copos",
+      "indiceGlucemico": 90
+    },
+    {
+      "nombre": "Quinoa, crudo",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Quinoa, hervido",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Sémola de trigo, crudo",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Sémola de trigo, hervido",
+      "indiceGlucemico": 67
+    },
+    {
+      "nombre": "Soja seca, crudo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Soja seca, hervido",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Sushi",
+      "indiceGlucemico": 42
+    },
+    {
+      "nombre": "Tapioca, cocido",
+      "indiceGlucemico": 84
+    },
+    {
+      "nombre": "Tapioca, crudo",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Trigo sarraceno, crudo",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Trigo sarraceno, hervido",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Trigo tierno, crudo",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Trigo tierno, hervido",
+      "indiceGlucemico": 54
+    },
+    {
+      "nombre": "Yuca, cocido",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Yuca, crudo",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Aguacate",
+      "indiceGlucemico": 10
+    },
+    {
+      "nombre": "Albaricoque",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Arándano",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Caqui (persimon)",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Castaña cruda",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Castaña tostada",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Cereza",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Chirimoya",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Ciruela",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Coco fresco",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Coco seco",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Dátil",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Frambuesa",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Fresones",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Granada",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Grosella",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Grosella negra",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Higos",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Kiwi",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Limón",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Litchi",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Mandarina",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Mango",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Manzana",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Manzana asada",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Melocotón",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Melocotón en conserva",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Melón",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Membrillo",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Membrillo, dulce de",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Moras",
+      "indiceGlucemico": 25
+    },
+    {
+      "nombre": "Naranja",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Nectarina",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Níspero",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Papaya",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Paraguayo",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Pera",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Piña",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Piña en conserva",
+      "indiceGlucemico": 53
+    },
+    {
+      "nombre": "Piña en su jugo",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Plátano",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Sandía",
+      "indiceGlucemico": 75
+    },
+    {
+      "nombre": "Uva",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Acelga",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Ajo",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Alcachofa",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Alga",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Apio",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Apio-nabo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Berenjena",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Berro",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Berza",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Borraja",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Brócoli",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Calabacín",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Calabaza",
+      "indiceGlucemico": 75
+    },
+    {
+      "nombre": "Cardo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Cebolla",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Cebolla frita en aros",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Champiñón",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Col ácida",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Col de Bruselas, Coliflor",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Edamame",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Endibia",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Escarola",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Espárrago blanco en conserva",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Espárrago verde",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Espinaca",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Grelos",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Judía verde",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Lechuga",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Lombarda",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Nabo",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Palmitos",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Pepino",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Pimiento rojo/verde",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Puerro",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Rábano",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Remolacha",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Repollo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Ruibarbo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Setas",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Soja en brotes",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Tomate",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Zanahoria",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Zanahoria en conserva",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Zanahoria hervida",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Aceituna",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Albaricoque seco",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Almendra",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Almendra tostada",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Avellana",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Cacahuete",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Ciruela pasa",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Dátil seco",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Higo seco",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Nuez",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Piñón",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Pipas",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Pistacho",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Sésamo",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Uva pasa",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Cuajada",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Agua de coco",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Bebida de almendra",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Bebida de arroz",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Bebida de avena",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Bebida de cacao",
+      "indiceGlucemico": 34
+    },
+    {
+      "nombre": "Bebida de soja",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Bebida energética",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Bebida isotónica",
+      "indiceGlucemico": 78
+    },
+    {
+      "nombre": "Bebida refrescante de sabores",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Bebida refrescante tipo cola",
+      "indiceGlucemico": 70
+    },
+  {
+      "nombre": "Bebida refrescante tipo cola o sabores light o sin azúcar",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Bitter",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Caldo de pollo o carne",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Cava brut",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Cava seco o semiseco",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Cerveza",
+      "indiceGlucemico": 110
+    },
+    {
+      "nombre": "Cerveza light",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Cerveza sin alcohol",
+      "indiceGlucemico": 110
+    },
+    {
+      "nombre": "Destilados (ginebra, whisky, ron, vodka)",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Gaseosa",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Horchata",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Horchata light",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Licor de melocotón o manzana",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Mosto",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Sangría",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Sidra",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Tónica",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Vermut",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Vino blanco o tinto",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Vino dulce",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Zumo de fruta",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Zumo de fruta sin azúcar añadido",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Zumo de tomate",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Arepa",
+      "indiceGlucemico": 72
+    },
+    {
+      "nombre": "Azúcar blanco",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Azúcar moreno",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Barrita energética (de cereales)",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Bizcocho o melindro",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Bollería en general",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Cacao en polvo",
+      "indiceGlucemico": 10
+    },
+    {
+      "nombre": "Cacao en polvo sin azúcar",
+      "indiceGlucemico": 10
+    },
+    {
+      "nombre": "Calamares a la romana",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Canelones con bechamel",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Caramelo",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Carne rebozada",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Chocolate >90% cacao",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Chocolate blanco o con leche",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Chocolate negro",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Churros",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Crema de cacahuete",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Crema de cacao",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Crema pastelera",
+      "indiceGlucemico": 60
+    },
+    {
+      "nombre": "Crepe",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Croquetas",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Cruasán",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Döner kebab",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Donut",
+      "indiceGlucemico": 75
+    },
+    {
+      "nombre": "Durum",
+      "indiceGlucemico": 40
+    },
+    {
+      "nombre": "Empanadilla de carne",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Ensaimada",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Ensaladilla rusa",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Fajita, tortilla mejicana",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Fructosa (edulcorante)",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Gazpacho comercial",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Gelatina 0%",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Gelatina comercial",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Glucosa (líquida o en pastillas)",
+      "indiceGlucemico": 100
+    },
+    {
+      "nombre": "Golosinas",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Ketchup",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Lasaña",
+      "indiceGlucemico": 53
+    },
+    {
+      "nombre": "Levadura",
+      "indiceGlucemico": 50
+    },
+    {
+      "nombre": "Magdalena",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Mazapán",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Merengue",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Mermelada",
+      "indiceGlucemico": 65
+    },
+    {
+      "nombre": "Mermelada light",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Miel",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Mostaza",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Palomitas",
+      "indiceGlucemico": 85
+    },
+    {
+      "nombre": "Pastel de chocolate",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pastel de crema",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Pepinillos en vinagre",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Pizza",
+      "indiceGlucemico": 45
+    },
+    {
+      "nombre": "Regaliz",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Rollito de primavera",
+      "indiceGlucemico": 35
+    },
+    {
+      "nombre": "Salsa barbacoa",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Salsa bechamel",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Salsa boloñesa",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Salsa carbonara",
+      "indiceGlucemico": 30
+    },
+    {
+      "nombre": "Salsa de soja",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Salsa de tomate comercial",
+      "indiceGlucemico": 20
+    },
+    {
+      "nombre": "Seitán",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Sucedáneo de café, tipo EKO",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Surimi (palitos de cangrejo)",
+      "indiceGlucemico": 0
+    },
+    {
+      "nombre": "Tarta de manzana",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Tofú",
+      "indiceGlucemico": 15
+    },
+    {
+      "nombre": "Tortilla de patatas",
+      "indiceGlucemico": 55
+    },
+    {
+      "nombre": "Turrón tipo Alicante",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Turrón tipo chocolate",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Turrón tipo Jijona",
+      "indiceGlucemico": 70
+    },
+    {
+      "nombre": "Vinagre",
+      "indiceGlucemico": 10
+    },
+    {
+      "nombre": "Vinagre tipo Módena (caramelizado)",
+      "indiceGlucemico": 20
+    }
+  ]
+}
+
+
+

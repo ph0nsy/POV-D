@@ -31,16 +31,20 @@ function loadJSON(path, success, error) {
     xhr.send();
   }
 
+function getGlucemicIndex(){
+  
+}
+
 function addToList(Data){
     console.log(Data);
-    var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">IG: ' + Data.product.ingredients[0].processing + ' ' + Data.product.ingredients[0].text + '</td></tr></tbody></table></li>';
+    var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">IG: ' + (Data.product.ingredients[0].processing ? Data.product.ingredients[0].processing.slice(3).toLowerCase() : "no") + ' ' + Data.product.ingredients[0].text.split(' ')[0].toLowerCase() + '</td></tr></tbody></table></li>';
     $("#List").append(newElement);
-    document.getElementById("kcal").value += 5;
-    document.getElementById("sugars").value += 5;
-    document.getElementById("carbs").value += 5;
-    document.getElementById("fat").value += 5;
-    document.getElementById("saturated").value += 5;
-    document.getElementById("salts").value += 5;
+    document.getElementById("kcal").value += 5.0;
+    document.getElementById("sugars").value += 5.0;
+    document.getElementById("carbs").value += 5.0;
+    document.getElementById("fat").value += 5.0;
+    document.getElementById("saturated").value += 5.0;
+    document.getElementById("salts").value += 5.0;
 }
 /**  
  * * Scanner *
