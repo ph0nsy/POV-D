@@ -9,9 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--Datos de la Pestalla-->
       <title>POV: Diabetes Tracker</title>
-      <link rel="icon" type="image/x-icon" href="./assets/pov_d_icon.ico">
-      <!--Estilos Propios-->
-      <link rel="stylesheet" href="./styles.css">
+      <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
       <!--Librería de Lectura de Códigos de Barras-->
       <script src="https://unpkg.com/html5-qrcode"></script>
       <!--Bootstrsp 5-->
@@ -21,6 +19,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+      <!--Estilos Propios-->
+      <link rel="stylesheet" href="/styles.css">
    </head>
    <body>
     <!--Responsive Scroll Navbar que salta a las diferentes secciones y colapsa a partir de ciertas dimensiones-->
@@ -53,7 +53,7 @@
                </ul>
                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                   <li class="nav-item" style="padding-right: 20px;">
-                      <a class="nav-link" href="./html/about.html">Contacto</a>
+                      <a class="nav-link" href="/about">Contacto</a>
                   </li>
                </ul>
             </div>
@@ -86,26 +86,32 @@
          <h1>Recomendaciones (Semanales)</h1>
          <h3>Calorias</h3>
          <progress id="kcal" value="0" max="14000"></progress>
+         <div id="kcal_v"></div>
          <br>
          <br>
          <h3>Azúcares</h3>
          <progress id="sugars" value="0" max="685"></progress>
+         <div id="sugars_v"></div>
          <br>
          <br>
          <h3>Carbohidratos</h3>
          <progress id="carbs" value="0" max="1769"></progress>
+         <div id="carbs_v"></div>
          <br>
          <br>
          <h3>Grasas Totales</h3>
          <progress id="fat" value="0" max="450"></progress>
+         <div id="fat_v"></div>
          <br>
          <br>
          <h3>Grasas Saturadas</h3>
          <progress id="saturated" value="0" max="85"></progress>
+         <div id="saturated_v"></div>
          <br>
          <br>
          <h3>Sales</h3>
-         <progress id="salts" value="10000" max="9045"></progress>
+         <progress id="salts" value="0" max="9045"></progress>
+         <div id="salts_v"></div>
          <br>
          <br>
       </div>

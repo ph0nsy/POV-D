@@ -12,6 +12,7 @@
  * //
  */
 
+
 // Lista de elementos escaneados
 var arr = [];
  
@@ -31,20 +32,23 @@ function loadJSON(path, success, error) {
     xhr.send();
   }
 
-function getGlucemicIndex(){
-  
-}
 
 function addToList(Data){
     console.log(Data);
     var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">IG: ' + (Data.product.ingredients[0].processing ? Data.product.ingredients[0].processing.slice(3).toLowerCase() : "no") + ' ' + Data.product.ingredients[0].text.split(' ')[0].toLowerCase() + '</td></tr></tbody></table></li>';
     $("#List").append(newElement);
-    document.getElementById("kcal").value += 5.0;
-    document.getElementById("sugars").value += 5.0;
-    document.getElementById("carbs").value += 5.0;
-    document.getElementById("fat").value += 5.0;
-    document.getElementById("saturated").value += 5.0;
-    document.getElementById("salts").value += 5.0;
+    document.getElementById("kcal").value += Data.product.nutriments["energy-kcal_serving"] ? Data.product.nutriments["energy-kcal_serving"] : 80.0;
+    document.getElementById("kcal_v").innerHTML = "<p>"+ document.getElementById("kcal").value +" / " + document.getElementById("kcal").max + "</p>";
+    document.getElementById("sugars").value += Data.product.nutriments["sugars_serving"] ? Data.product.nutriments["sugars_serving"] : 10.0;
+    document.getElementById("sugars_v").innerHTML = "<p>"+ document.getElementById("sugars").value +" / " + document.getElementById("sugars").max + "</p>";
+    document.getElementById("carbs").value += Data.product.nutriments["carbohydrates_serving"] ? Data.product.nutriments["carbohydrates_serving"] : 20.0;
+    document.getElementById("carbs_v").innerHTML = "<p>"+ document.getElementById("carbs").value +" / " + document.getElementById("carbs").max + "</p>";
+    document.getElementById("fat").value += Data.product.nutriments["fat_serving"] ? Data.product.nutriments["fat_serving"] : 6.0;
+    document.getElementById("fat_v").innerHTML = "<p>"+ document.getElementById("fat").value +" / " + document.getElementById("fat").max + "</p>";
+    document.getElementById("saturated").value += Data.product.nutriments["saturated-fat_serving"] ? Data.product.nutriments["saturated-fat_serving"] : 2.0;
+    document.getElementById("saturated_v").innerHTML = "<p>"+ document.getElementById("saturated").value +" / " + document.getElementById("saturated").max + "</p>";
+    document.getElementById("salts").value += Data.product.nutriments["salt_serving"] ? Data.product.nutriments["salt_serving"] : 45.0;
+    document.getElementById("salts_v").innerHTML = "<p>"+ document.getElementById("salts").value +" / " + document.getElementById("salts").max + "</p>";
 }
 /**  
  * * Scanner *
