@@ -3,8 +3,7 @@
  * 
  */
 const express = require('express');
-const mysql = require('mysql');
-const dotenv = require('dotenv');    
+const mysql = require('mysql');  
 const path = require('path');
 const fs = require('fs');
 const bodyParser = require('body-parser');
@@ -39,10 +38,10 @@ app.listen(port, () => {
  * 
  */
 const db = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
+    host: "sql8.freesqldatabase.com",//process.env.DATABASE_HOST,
+    user: "sql8586547",//process.env.DATABASE_USER,
+    password: "aWPAfZApUF",//process.env.DATABASE_PASSWORD,
+    database: "sql8586547"//process.env.DATABASE
 })
 
 /**
