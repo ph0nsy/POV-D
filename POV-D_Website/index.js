@@ -38,7 +38,6 @@ app.listen(port, () => {
  * 
  * 
  */
-dotenv.config({ path: path.resolve(__dirname, './.env') })
 const db = mysql.createConnection({
     host: process.env.DATABASE_HOST,
     user: process.env.DATABASE_USER,
