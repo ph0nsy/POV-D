@@ -15,7 +15,25 @@
 
 // Lista de elementos escaneados
 var arr = [];
- 
+var gIarr = [];
+var GIlevel = 0;
+let res;
+let GIdata;
+
+function getGIdata(data){
+  GIdata = data;
+}
+
+function loadLocalJSON(){
+fetch("./assets/GI.json")
+  .then(response=>{return response.json();
+  })
+  .then(jsondata =>{
+    getGIdata(jsondata);
+  });
+}
+loadLocalJSON();
+
 function loadJSON(path, success, error) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function () {
@@ -32,10 +50,65 @@ function loadJSON(path, success, error) {
     xhr.send();
   }
 
+function checkGIlevel(){
+  GIlevel = gIarr.reduce((a, b) => a + b, 0) / gIarr.length;
+  if (gIarr.length>0){
+    if (GIlevel < 45){
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: cornflowerblue; font-variant: small-caps;'>Bueno</b></h2>"    
+    }
+    if (GIlevel < 52){
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: seagreen; font-variant: small-caps;'>Aceptable</b></h2>"    
+    }
+    else {
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: crimson; font-variant: small-caps;'>Elevado</b><br>¡Deberías reducir el número de productos con un índice glucémico alto!</h2>"    
+    }
+  }
+}
+
+function setRes(str){
+  res = str;
+}
+
+
+
+function getGI(product, GIdata){
+  $.ajaxSetup({
+      async: false
+  });
+  var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=es&dt=t&q=" + encodeURI(product);
+  $.getJSON(url, function(data) {
+      let i;
+      for(i = 0; i<GIdata.length;i++){  
+        if(GIdata[i].nombre.toLowerCase().includes(data[0][0][0].toLowerCase())){
+          gIarr.push(GIdata[i].indiceGlucemico);
+          if(GIdata[i].indiceGlucemico < 40){
+            checkGIlevel();
+            setRes("IG Bajo");
+          } else if (GIdata[i].indiceGlucemico < 60) {
+            checkGIlevel();
+            setRes("IG Medio");
+          } else {
+            checkGIlevel();
+            setRes("IG Alto");
+          }
+          break;
+        }
+      }
+      if(i>=GIdata.length){
+        gIarr.push(40);   
+        checkGIlevel();
+        setRes("IG Medio");
+      }
+    });
+    $.ajaxSetup({
+      async: true
+    });
+}
 
 function addToList(Data){
     console.log(Data);
-    var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">IG: ' + (Data.product.ingredients[0].processing ? Data.product.ingredients[0].processing.slice(3).toLowerCase() : "no") + ' ' + Data.product.ingredients[0].text.split(' ')[0].toLowerCase() + '</td></tr></tbody></table></li>';
+    getGI(Data.product.ingredients[0].text.split(' ')[0].toLowerCase(), GIdata)
+    var newElement = '<li><table style="table-layout: fixed; width: 100%;"><tbody><tr><td>' + Data.product.product_name + '</td><td style="text-align: right;">Ración: ' + Data.product.serving_size + '</td><td style="text-align: right;">'+ res + '</td></tr></tbody></table></li>';
     $("#List").append(newElement);
     document.getElementById("kcal").value += Data.product.nutriments["energy-kcal_serving"] ? Data.product.nutriments["energy-kcal_serving"] : 80.0;
     document.getElementById("kcal_v").innerHTML = "<p>"+ document.getElementById("kcal").value +" / " + document.getElementById("kcal").max + "</p>";
