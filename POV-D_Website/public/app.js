@@ -54,13 +54,13 @@ function checkGIlevel(){
   GIlevel = gIarr.reduce((a, b) => a + b, 0) / gIarr.length;
   if (gIarr.length>0){
     if (GIlevel < 45){
-      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: cornflowerblue; font-variant: small-caps;'>Bueno</b></h2>"    
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: cornflowerblue; font-variant: small-caps;'>Bueno</b><br></h2>"    
     }
     if (GIlevel < 52){
-      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: seagreen; font-variant: small-caps;'>Aceptable</b></h2>"    
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: seagreen; font-variant: small-caps;'>Aceptable</b><br></h2>"    
     }
     else {
-      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: crimson; font-variant: small-caps;'>Elevado</b><br>¡Deberías reducir el número de productos con un índice glucémico alto!</h2>"    
+      document.getElementById("warning").innerHTML = "<h2>Estado del índice glucémico de la lista: <b style='color: crimson; font-variant: small-caps;'>Elevado</b><br>¡Deberías reducir el número de productos con un índice glucémico alto!<br></h2>"    
     }
   }
 }
