@@ -3,7 +3,7 @@
     "dotenv": "^16.0.3",
     "fs": "^0.0.1-security",
     "mongodb": "^4.13.0",
-    "mongoose": "^6.8.1",
+    "mongoose": "^6.11.3",
     "mysql": "^2.18.1"
   }
 }
